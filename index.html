@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Localizador de IP</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="/imgs/2165674.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h1 class="text-center">Localizador de IP</h1>
+        <div class="form-group">
+            <input type="text" id="ipInput" class="form-control" placeholder="Digite um endereço IP">
+        </div>
+        <button id="locateButton" class="btn btn-primary btn-block" >Localizar IP</button>
+
+        <div class="text-center">
+            <a href="https://iplogger.org/pt/randomIpGenerator/" target="_blank" rel="noopener noreferrer" id="locateButton" class="btn btn-primary btn-block" >Busque por IP's aleatorios</a>   
+        </div>
+
+        <div class="text-center">
+
+        <a href="https://protonvpn.com/pt-br" target="_blank" rel="noopener noreferrer" id="locateButton" class="btn btn-primary btn-block" >Se não quiser ser localizado, use VPN</a>
+        </div>
+        <div id="result" class="mt-4"></div>
+        
+        <div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-dark">&copy; 2024 Localizador de IP. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="maps.js"></script>
+    <script src="back.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDoZ8QxPQQo1_qYSVIwm3PGovziJBrYpM&callback=initMap" async defer></script>
+    <div id="rain"></div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+*{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track{
+
+    background-color: #000000;
+    margin-block: .2em;
+    border-radius: 10px;
+    
+
+}
+
+::-webkit-scrollbar{
+
+    width: 15px;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    width: 8px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: .19em solid  #000000;
+    margin-block: .2em;
+    -webkit-transition: .1000000s;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background-color: #6d6d6d;   
+
+}
+
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-shadow: 0 0 20px #00ff00;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 45px;
+}
+
+.form-control {
+    background-color: #222;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+}
+
+/* .text-light{
+    color: #00ff00;
+    text-decoration-color: #000;
+    
+}
+
+span{
+    color: #000;
+    text-decoration-color: #000;
+    
+} */
+
+.form-control::placeholder {
+    color: #00ff00;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+#ipInput {
+    font-size: 1.1em;
+}
+
+#locateButton {
+    font-size: 1.1em;
+}
+
+.alert {
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.text-center{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.btn-primary {
+    background-color: #00ff00;
+    border: none;
+    box-shadow: 0 0 10px #00ff00;
+    text-decoration-color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #0fdc0f;
+    text-decoration-color: #000000;
+}
+
+.vpn-link {
+    display: inline-block; 
+    padding: 10px 15px; 
+    text-decoration-color: #000000;
+    border-radius: 5px; 
+    color: #00ff00;
+    text-decoration: underline;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.vpn-link:hover {
+    color: #00ff00;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    
+}
+
+
+#result {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #ipInput, #locateButton {
+        font-size: 1em;
+    }
+}
+
+#rain {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    z-index: -1; 
+}
+
+.rain-character {
+    position: absolute;
+    color: #00ff00;
+    white-space: nowrap;
+    font-size: 20px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
